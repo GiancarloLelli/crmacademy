@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Xrm.Tooling.Connector;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +12,10 @@ namespace Avanade.TeamBill.ConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!!!");
+			Console.WriteLine("Ciao Avanade");
+		
+		    CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionStrings["CRMOnline"].ConnectionString);
+
 			Console.ReadLine();
 		}
 	}
