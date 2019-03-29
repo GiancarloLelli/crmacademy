@@ -35,8 +35,6 @@ namespace Dsoft20.Console
 				return;
 			}
 
-
-
 			System.Console.WriteLine($"Connesso a {svc.ConnectedOrgFriendlyName}");	
 
 			CreateRecords(svc);
