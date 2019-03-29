@@ -1,57 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
-using Microsoft.Xrm.Tooling.Connector;
+Ôªøusing Avanade.Xrm.Batches;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
-using Avanade.Xrm.Batches;
+using System;
 
-namespace Dsoft20.Console
+
+namespace Dsoft20.Console.Workers
 {
-	class Program
+	public class CRUDBatch : IFlow
 	{
-		static void Main(string[] args)
+		public void Execute(IFlowContext context)
 		{
-			var convenctions = new Conventions
-			{
-				FilterAssembly = fullAssemblyName => fullAssemblyName.IndexOf("Dsoft20.Console", 0, StringComparison.InvariantCultureIgnoreCase) != -1
-			};
-			Bootstrapper.Boot(args, convenctions);
-		/*	System.Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAA");
+			IOrganizationService svc = null;
 
-			string connection_String = ConfigurationManager.ConnectionStrings["CRM"].ConnectionString;
-
-			CrmServiceClient svc = null;
-			
-			svc = new CrmServiceClient(connection_String);
-
-			if (string.IsNullOrEmpty(svc.ConnectedOrgFriendlyName))
-			{
-				System.Console.WriteLine("IMPOSSIBILE CONNETTERSI!");
-				System.Console.ReadLine();
-				return;
-			}
-
-			System.Console.WriteLine($"Connesso a {svc.ConnectedOrgFriendlyName}");	
-
+			svc = context.Service;
 			CreateRecords(svc);
-			EntityReference reference =  RetrieveRecords(svc);
-			UpdateRecords(svc, reference);
-			DeleteRecords(svc, reference);*/
+
+			var singleTodo = RetrieveRecords(svc);
+			UpdateRecords(svc, singleTodo);
+
+			singleTodo = RetrieveRecords(svc);
+			DeleteRecords(svc, singleTodo);
+			
 		}
 
+		Random rnd = new Random();
 
-		/*static Random rnd = new Random();
-
-		private static void DeleteRecords(CrmServiceClient svc, EntityReference reference)
+		private void DeleteRecords(IOrganizationService svc, EntityReference reference)
 		{
 			svc.Delete(reference.LogicalName, reference.Id);
 		}
 
-		private static void UpdateRecords(CrmServiceClient svc, EntityReference reference)
+		private void UpdateRecords(IOrganizationService svc, EntityReference reference)
 		{
 			//ColumnSet attributes = new ColumnSet(new string[] { "ava_name"});
 			//Entity entity = svc.Retrieve(reference.LogicalName, reference.Id, attributes);
@@ -66,14 +45,14 @@ namespace Dsoft20.Console
 			svc.Update(entity);
 		}
 
-		private static EntityReference RetrieveRecords(CrmServiceClient svc)
+		private EntityReference RetrieveRecords(IOrganizationService svc)
 		{
 			QueryExpression query = new QueryExpression("ava_todo");
 			query.ColumnSet = new ColumnSet(true);
 			query.TopCount = 10;
 			query.NoLock = true;
 			query.AddOrder("createdon", OrderType.Descending);
-			query.Criteria.AddCondition("ava_done",ConditionOperator.Equal, false);
+			query.Criteria.AddCondition("ava_done", ConditionOperator.Equal, false);
 
 			var entities = svc.RetrieveMultiple(query);
 			EntityReference reference = null;
@@ -81,7 +60,7 @@ namespace Dsoft20.Console
 			for (int i = 0; i < entities.Entities.Count; i++)
 			{
 				System.Console.WriteLine("================================================");
-				System.Console.WriteLine($"Entit‡ {i}");
+				System.Console.WriteLine($"Entit√† {i}");
 				System.Console.WriteLine("================================================");
 				System.Console.WriteLine($"Nome: {entities.Entities[i].GetAttributeValue<string>("ava_name")}");
 				System.Console.WriteLine($"Finito:  {entities.Entities[i].GetAttributeValue<bool>("ava_done")}");
@@ -89,7 +68,7 @@ namespace Dsoft20.Console
 				System.Console.WriteLine($"Data fine: {entities.Entities[i].GetAttributeValue<DateTime>("ava_duedate")}");
 				System.Console.WriteLine($"Assegnato a: {entities.Entities[i].GetAttributeValue<Entity>("ava_assignedtoid")}");
 
-				reference = entities.Entities[i].ToEntityReference();				
+				reference = entities.Entities[i].ToEntityReference();
 			}
 
 			//foreach (var entity in entities.Entities)
@@ -100,16 +79,16 @@ namespace Dsoft20.Console
 			//	System.Console.WriteLine($"nome {name}");
 			//	System.Console.WriteLine("================================================");
 			//}
-			
+
 			return reference;
 		}
 
-		private static void CreateRecords(CrmServiceClient svc)
+		private void CreateRecords(IOrganizationService svc)
 		{
 
-			System.Console.WriteLine($"Creata entit‡ ava_todo");
+			System.Console.WriteLine($"Creata entit√† ava_todo");
 			var entity = new Entity("ava_todo");
-			entity["ava_name"] = $"TODO {rnd.Next(0,int.MaxValue)}";
+			entity["ava_name"] = $"TODO {rnd.Next(0, int.MaxValue)}";
 			entity["ava_done"] = false;
 			entity["ava_startdate"] = DateTime.Now;
 			entity["ava_duedate"] = DateTime.Now.AddYears(2);
@@ -117,7 +96,7 @@ namespace Dsoft20.Console
 
 			svc.Create(entity);
 
-			System.Console.WriteLine($"Creata entit‡ ava_todo");
-		}*/
+			System.Console.WriteLine($"Creata entit√† ava_todo");
+		}
 	}
 }
