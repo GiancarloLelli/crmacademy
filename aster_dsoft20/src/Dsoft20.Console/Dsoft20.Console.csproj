@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A750CE4-D1BE-497C-8BEC-E95D3CA67DA0}</ProjectGuid>
+    <ProjectGuid>{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Dsoft20.Console</RootNamespace>
     <AssemblyName>Dsoft20.Console</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
