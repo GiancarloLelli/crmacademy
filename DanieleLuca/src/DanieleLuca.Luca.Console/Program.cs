@@ -10,6 +10,7 @@ namespace DanieleLuca.Luca.Console
 	{
 		static void Main(string[] args)
 		{
+			System.Console.WriteLine("Forza Napoli");
 		}
 	}
 }
