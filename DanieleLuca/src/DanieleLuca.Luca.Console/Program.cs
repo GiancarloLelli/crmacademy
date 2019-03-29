@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Avanade.TeamBill.ConsoleApp
+namespace DanieleLuca.Luca.Console
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!!!");
-			Console.ReadLine();
+			System.Console.WriteLine("Forza Napoli");
 		}
 	}
 }
