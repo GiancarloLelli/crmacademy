@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billa Console", "src\Billa Console\Billa Console.csproj", "{802F6C49-6CF7-4D83-8AA7-11CECD873260}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillaConsole", "src\Billa Console\BillaConsole.csproj", "{802F6C49-6CF7-4D83-8AA7-11CECD873260}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.TeamBill.ConsoleApp", "src\Avanade.TeamBill.ConsoleApp\Avanade.TeamBill.ConsoleApp.csproj", "{612F5184-4BF4-4285-B28D-20C998A3B921}"
 EndProject
