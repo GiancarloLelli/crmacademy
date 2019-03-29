@@ -10,7 +10,7 @@ namespace Dsoft20.Console
 	{
 		static void Main(string[] args)
 		{
-
+			System.Console.Write("AAAAAAAAAAAAAAAAAAAAAAAA");
 		}
 	}
 }

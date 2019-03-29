@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanieleConsoleApp1", "src\DanieleConsoleApp1\DanieleConsoleApp1.csproj", "{46F87D36-30E4-4F64-9389-A2BBAE840E2C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanieleLuca.Luca.Console", "src\DanieleLuca.Luca.Console\DanieleLuca.Luca.Console.csproj", "{EF7BCF0A-D90D-4574-98FD-0E5758EDEB95}"
 EndProject
 Global
@@ -11,6 +13,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46F87D36-30E4-4F64-9389-A2BBAE840E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F87D36-30E4-4F64-9389-A2BBAE840E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7BCF0A-D90D-4574-98FD-0E5758EDEB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF7BCF0A-D90D-4574-98FD-0E5758EDEB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7BCF0A-D90D-4574-98FD-0E5758EDEB95}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -10,6 +10,7 @@ namespace Billa_Console
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("CIAO MONDO");
         }
     }
 }
