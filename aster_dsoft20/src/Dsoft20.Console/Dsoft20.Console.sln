@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giancarlo.Console", "..\src\Giancarlo.Console\Giancarlo.Console.csproj", "{4190D9AD-E9AB-4604-BC0B-887CD1DE32BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dsoft20.Console", "Dsoft20.Console.csproj", "{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4190D9AD-E9AB-4604-BC0B-887CD1DE32BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4190D9AD-E9AB-4604-BC0B-887CD1DE32BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4190D9AD-E9AB-4604-BC0B-887CD1DE32BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4190D9AD-E9AB-4604-BC0B-887CD1DE32BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA43E7D9-3DF1-4047-BA93-797269E3A149}
+		SolutionGuid = {54C553D6-6EC5-47BD-B487-35B35DD5DF8C}
 	EndGlobalSection
 EndGlobal
