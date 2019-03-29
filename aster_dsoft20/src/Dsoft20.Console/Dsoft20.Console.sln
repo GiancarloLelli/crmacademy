@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aster.Console", "src\Aster.Console\Aster.Console.csproj", "{98A274BA-4E84-4825-B35D-9BE8C4CCB192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dsoft20.Console", "Dsoft20.Console.csproj", "{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{98A274BA-4E84-4825-B35D-9BE8C4CCB192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98A274BA-4E84-4825-B35D-9BE8C4CCB192}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98A274BA-4E84-4825-B35D-9BE8C4CCB192}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98A274BA-4E84-4825-B35D-9BE8C4CCB192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB8202F-D3B0-4DB1-8179-6A1A2A93DBA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E62F15B8-5A1F-4F50-85AE-06B35210E6C7}
+		SolutionGuid = {54C553D6-6EC5-47BD-B487-35B35DD5DF8C}
 	EndGlobalSection
 EndGlobal
