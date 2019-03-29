@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Billa_Console
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-		}
-	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("CIAO MONDO");
+        }
+    }
 }
